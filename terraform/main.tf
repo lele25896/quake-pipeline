@@ -207,10 +207,6 @@ resource "google_cloud_run_v2_service" "quake" {
   }
 
   depends_on = [google_project_service.apis]
-
-  lifecycle {
-    ignore_changes = [template[0].containers[0].image]
-  }
 }
 
 # --- BigQuery ------------------------------------------------------------
