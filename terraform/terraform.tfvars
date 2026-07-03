@@ -1,0 +1,5 @@
+project_id   = "quake-pipeline-90565"
+region       = "europe-west1"
+service_name = "quake-pipeline"
+github_repo  = "lele25896/quake-pipeline"
+bq_dataset   = "quakes"
