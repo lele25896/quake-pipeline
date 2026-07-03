@@ -141,6 +141,8 @@ resource "google_project_iam_member" "github_ci_roles" {
     "roles/cloudscheduler.admin",
     "roles/iam.serviceAccountAdmin",
     "roles/iam.serviceAccountUser",
+    "roles/resourcemanager.projectIamAdmin",
+    "roles/iam.workloadIdentityPoolAdmin",
   ])
   project = var.project_id
   role    = each.value
